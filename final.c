@@ -1,6 +1,6 @@
 #include<stdio.h>
-int nf;
 int ns;
+int nst;
 struct Staff
 {
     char Staff_name[10];
