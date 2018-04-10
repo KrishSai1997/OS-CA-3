@@ -1,7 +1,7 @@
 #include<stdio.h>
 int total_time=120;//mins
-int nf;
 int ns;
+int nst;
 struct Staff
 {
     char* Staff_name;
