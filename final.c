@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
 int ns;
 int nst;
 struct Staff
@@ -48,12 +50,7 @@ void main()
 			time1=time1+s_slice;
 			printf("\n Query has been heard for %s ",s[i].Staff_name);
 		}
-		else
-		{
-			time1=time1+s_slice;
-			printf("\n Query cannot be heard so long for %s ",s[i].Staff_name);
-
-		}
+		
 	}
 	printf("\n Student: ");
 	for(i=0;i<nst;i++)
@@ -69,11 +66,7 @@ void main()
 			time2+=st_slice;
 			printf("\n Query has been heard for %s ",st[i].student_name);
 		}
-		else
-		{
-			time2+=st_slice;
-			printf("\n Query cannot be heard so long for %s ",st[i].student_name);
-		}
+		
 	}
     int	total=time1+time2-60;
 	int avg=total/(ns+nst);
